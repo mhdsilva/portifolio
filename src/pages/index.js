@@ -1,6 +1,7 @@
 import React from 'react'
 import {
-	Container
+	Container,
+	Divider
 } from '@mui/material'
 import NavBar from '../components/NavBar'
 import Introduction from '../components/Introduction'
@@ -14,6 +15,7 @@ export default function Home () {
 		<>
 			<NavBar />
 			<Introduction />
+			<Divider className='bg-white' variant='middle' />
 			<Container className='flex flex-col gap-y-12'>
 				<About />
 				<Experience />

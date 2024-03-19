@@ -1,9 +1,10 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
+import CurrentCompany from './CurrentCompany'
 
 export default function Introduction() {
 	return (
-		<Container>
+		<Container className='mb-12'>
 			<Box
 				className='flex flex-col items-center justify-center h-96'
 			>
@@ -17,6 +18,7 @@ export default function Introduction() {
 						Welcome to my personal portfolio
 				</Typography>
 			</Box>
+			<CurrentCompany />
 		</Container>
 	)
 }

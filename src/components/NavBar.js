@@ -4,7 +4,7 @@ import { AppBar, Button, Container, Link, Typography } from '@mui/material'
 export default function NavBar (){
 
 	return(
-		<AppBar position="static" className='bg-secondary flex flex-row h-12 items-center px-8'>
+		<AppBar position="sticky" className='bg-secondary flex flex-row h-12 items-center px-8'>
 			<Container>
 				<Typography> LOGO </Typography>
 			</Container>
