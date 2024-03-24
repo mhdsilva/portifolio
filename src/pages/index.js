@@ -14,13 +14,15 @@ export default function Home () {
 	return (
 		<>
 			<NavBar />
-			<Introduction />
-			<Divider className='bg-white' variant='middle' />
-			<Container className='flex flex-col gap-y-12'>
-				<About />
-				<Experience />
-				<Projects />
-				<Contact />
+			<Container className='mx-12'>
+				<Introduction />
+				<Divider className='bg-white' variant='middle' />
+				<Container className='flex flex-col gap-y-12'>
+					<About/>
+					<Experience />
+					<Projects />
+					<Contact />
+				</Container>
 			</Container>
 		</>
 	)

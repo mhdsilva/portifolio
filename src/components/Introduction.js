@@ -1,24 +1,29 @@
 import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
-import CurrentCompany from './CurrentCompany'
+import ProfissionalImages from './ProfissionalImages'
 
 export default function Introduction() {
 	return (
-		<Container className='mb-12'>
+		<Container className='flex flex-row justify-between h-screen'>
 			<Box
-				className='flex flex-col items-center justify-center h-96'
+				className='flex flex-col items-start justify-center w-3/5 h-full'
 			>
-				<Typography variant="h1" className='text-center'>
-						Hello, I'm <span className='text-primary'>Matheus Silva</span>
+				<Typography variant="h2">
+						Hello, I'm
 				</Typography>
-				<Typography variant="h2" className='text-center'>
-						Full Stack Developer
+				<Typography variant="h1" className='text-primary'>
+						Matheus Silva
 				</Typography>
-				<Typography variant="h3" className='text-center'>
-						Welcome to my personal portfolio
+				<Typography variant="h2">
+						Software Developer
 				</Typography>
+				<Box className='p-8'>
+					<Typography >
+						"I never expected a miracle, I will make things happen myself."
+					</Typography>
+				</Box>
 			</Box>
-			<CurrentCompany />
+			<ProfissionalImages />
 		</Container>
 	)
 }
