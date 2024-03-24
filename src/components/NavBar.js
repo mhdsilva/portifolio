@@ -4,26 +4,26 @@ import { AppBar, Button, Container, Link, Typography } from '@mui/material'
 export default function NavBar (){
 
 	return(
-		<AppBar position="sticky" className='bg-secondary flex flex-row h-12 items-center px-8'>
+		<AppBar position="sticky" className='bg-secondary flex flex-row h-12 items-center justify-between px-8'>
 			<Container>
 				<Typography> LOGO </Typography>
 			</Container>
-			<Container className='flex flex-row-reverse space-x-reverse items-center gap-x-4'>
-				<Button variant="contained" className='hover:bg-primary'>
-						Download CV
-				</Button>
+			<Container className='flex flex-row justify-end items-center gap-x-4'>
 				<Link href="#" underline="hover" className='text-white hover:text-primary'>
-						Contact
-				</Link>
-				<Link href="#" underline="hover" className='text-white hover:text-primary'>
-						Projects
+						About
 				</Link>
 				<Link href="#" underline="hover" className='text-white hover:text-primary'>
 						Experience
 				</Link>
 				<Link href="#" underline="hover" className='text-white hover:text-primary'>
-						About
+						Projects
 				</Link>
+				<Link href="#" underline="hover" className='text-white hover:text-primary'>
+						Contact
+				</Link>
+				<Button variant="contained" className='hover:bg-primary whitespace-nowrap'>
+						Download CV
+				</Button>
 			</Container>
 		</AppBar>
 	)
