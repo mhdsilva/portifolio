@@ -2,9 +2,9 @@ import React from 'react'
 import { Box, Container, Typography } from '@mui/material'
 import ProfissionalImages from './ProfissionalImages'
 
-export default function Introduction() {
+export default function Introduction({ refScroll }) {
 	return (
-		<Container className='flex flex-row justify-between h-screen'>
+		<Container className='flex flex-row justify-between h-screen' ref={refScroll}>
 			<Box
 				className='flex flex-col items-start justify-center w-3/5 h-full'
 			>
@@ -27,3 +27,4 @@ export default function Introduction() {
 		</Container>
 	)
 }
+

@@ -1,9 +1,9 @@
 import React from 'react'
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
 
-export default function Experience() {
+export default function Experience({ refScroll }) {
 	return (
-		<Box className="flex flex-col items-center justify-center gap-y-8">
+		<Box className="flex flex-col items-center justify-center gap-y-8 h-screen" ref={refScroll}>
 			<Typography variant="h4">
 						Experience
 			</Typography>

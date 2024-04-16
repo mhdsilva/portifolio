@@ -4,9 +4,9 @@ import {
 	Box
 } from '@mui/material'
 
-export default function Contact () {
+export default function Contact({ refScroll }) {
 	return (
-		<Box className="flex flex-col items-center justify-center gap-y-8">
+		<Box className="flex flex-col items-center justify-center gap-y-8 h-screen" ref={refScroll}>
 			<Typography variant="h4">
 				Contact
 			</Typography>
