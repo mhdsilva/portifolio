@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Card, CardActionArea, CardContent, CardMedia, Typography } from '@mui/material'
+import Image from 'next/image'
 
 export default function Experience({ refScroll }) {
 	return (
@@ -8,72 +9,42 @@ export default function Experience({ refScroll }) {
 						Experience
 			</Typography>
 			<Box className='flex flex-row gap-x-8 justify-center items-center'>
-				<Card className='w-80'>
-					<CardActionArea className='h-fit'>
-						<CardMedia
-							component="img"
-							alt="Contemplative Reptile"
-							height="150"
-							image="https://via.placeholder.com/150"
-							title="Contemplative Reptile"
-						/>
-						<CardContent>
-							<Typography>
-										The Broklyn Brothers
-							</Typography>
-							<Typography>
-										Webmaster
-							</Typography>
-							<Typography>
-										From August 8, 2022, to October 31, 2023
-							</Typography>
-						</CardContent>
-					</CardActionArea>
-				</Card>
-				<Card className='w-80'>
-					<CardActionArea className='h-fit'>
-						<CardMedia
-							component="img"
-							alt="Contemplative Reptile"
-							height="150"
-							image="https://via.placeholder.com/150"
-							title="Contemplative Reptile"
-						/>
-						<CardContent>
-							<Typography>
-										Videomatik
-							</Typography>
-							<Typography>
-										Full Stack Developer
-							</Typography>
-							<Typography>
-										From November 1, 2023, to January 31, 2024
-							</Typography>
-						</CardContent>
-					</CardActionArea>
-				</Card>
-				<Card className='w-80'>
-					<CardActionArea className='h-fit'>
-						<CardMedia
-							component="img"
-							alt="Contemplative Reptile"
-							height="150"
-							image="https://via.placeholder.com/150"
-							title="Contemplative Reptile"
-						/>
-						<CardContent>
-							<Typography>
-										Beuni
-							</Typography>
-							<Typography>
-										Software Analyst
-							</Typography>
-							<Typography>
-										From February 14, 2024, to Present
-							</Typography>
-						</CardContent>
-					</CardActionArea>
-				</Card>
+				<Box className='flex flex-col gap-y-4 rounded-md border p-3 shadow-sm cursor-pointer'>
+					<Image src="/images/tbb.jpeg" alt="The Brooklyn Brothers" height={150} width={150} className='h-48 w-full rounded-lg object-cover object-center'/>
+					<Typography className='text-center'>
+						The Brooklyn Brothers
+					</Typography>
+					<Typography className='text-center'>
+						Webmaster
+					</Typography>
+					<Typography className='text-center text-primary'>
+						See details...
+					</Typography>
+				</Box>
+				<Box className='flex flex-col gap-y-4 rounded-md border p-3 shadow-sm cursor-pointer'>
+					<Image src="/images/videomatik.jpeg" alt="Videomatik" height={150} width={150} className='h-48 w-full rounded-lg object-cover object-center'/>
+					<Typography className='text-center'>
+						Videomatik
+					</Typography>
+					<Typography className='text-center'>
+						Software Developer
+					</Typography>
+					<Typography className='text-center text-primary'>
+						See details...
+					</Typography>
+				</Box>
+				<Box className='flex flex-col gap-y-4 rounded-md border p-3 shadow-sm cursor-pointer'>
+					<Image src="/images/beuni.png" alt="Videomatik" height={150} width={150} className='h-48 w-full rounded-lg object-cover object-center'/>
+					<Typography className='text-center'>
+						BeUni
+					</Typography>
+					<Typography className='text-center'>
+						Software Engineer
+					</Typography>
+					<Typography className='text-center text-primary'>
+						See details...
+					</Typography>
+				</Box>
 			</Box>
 		</Box>
 	)
