@@ -44,7 +44,7 @@ export default function Home () {
 	return (
 		<>
 			<NavBar scroll={scroll} />
-			<Container className='mx-12 mx-auto'>
+			<Container className='max-w-5xl	mx-auto'>
 				<Introduction refScroll={introductionRef} />
 				<Divider className='bg-white' variant='middle' />
 				<Container className='flex flex-col gap-y-12'>

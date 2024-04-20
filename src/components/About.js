@@ -1,5 +1,6 @@
 import React from 'react'
 import { Box, Typography } from '@mui/material'
+import Image from 'next/image'
 
 export default function About({ refScroll }) {
 	return (
@@ -7,7 +8,7 @@ export default function About({ refScroll }) {
 			<Typography variant="h4">
 						About me
 			</Typography>
-			<img src="https://via.placeholder.com/150" alt="Picture of the author"/>
+			<Image src='/images/Matheus.jpeg' width={150} height={150} />
 			<Typography variant="subtitle1" className='text-center w-1/2'>
 						I am a person passionate about technology and entrepreneurship, so I follow my goals to solve the problems of the people around me in the most efficient way possible.
 			</Typography>
