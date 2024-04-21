@@ -1,12 +1,12 @@
 import React from 'react'
 import { AppBar, Button, Container, Link, Typography } from '@mui/material'
-import ElectricBoltIcon from '@mui/icons-material/ElectricBolt';
+import ElectricBoltIcon from '@mui/icons-material/ElectricBolt'
 
 export default function NavBar({ scroll }){
 
 	const handleClick = (section) => {
-		scroll(section); 
-	};
+		scroll(section) 
+	}
 
 	return(
 		<AppBar position="sticky" className='bg-secondary h-12 w-full flex items-center justify-center'>

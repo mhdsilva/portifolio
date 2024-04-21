@@ -13,7 +13,7 @@ export default function About({ refScroll }) {
 						I am a person passionate about technology and entrepreneurship, so I follow my goals to solve the problems of the people around me in the most efficient way possible.
 			</Typography>
 			<Typography variant="subtitle1" className='text-center w-1/2'>
-						Currently I am studying Bachalor's degree in Information Systems at Universidade de São Paulo.
+						Currently I am studying Bachalor&rsquo;s degree in Information Systems at Universidade de São Paulo.
 			</Typography>
 		</Box>
 	)

@@ -20,23 +20,23 @@ export default function Home () {
 
 	const scroll = (scroll) => {
 		switch (scroll) {
-			case 'introduction':
-				introductionRef.current.scrollIntoView({ behavior: 'smooth' })
-				break
-			case 'about':
-				aboutRef.current.scrollIntoView({ behavior: 'smooth' })
-				break
-			case 'experience':
-				experienceRef.current.scrollIntoView({ behavior: 'smooth' })
-				break
-			case 'projects':
-				projectsRef.current.scrollIntoView({ behavior: 'smooth' })
-				break
-			case 'contact':
-				contactRef.current.scrollIntoView({ behavior: 'smooth' })
-				break
-			default:
-				break
+		case 'introduction':
+			introductionRef.current.scrollIntoView({ behavior: 'smooth' })
+			break
+		case 'about':
+			aboutRef.current.scrollIntoView({ behavior: 'smooth' })
+			break
+		case 'experience':
+			experienceRef.current.scrollIntoView({ behavior: 'smooth' })
+			break
+		case 'projects':
+			projectsRef.current.scrollIntoView({ behavior: 'smooth' })
+			break
+		case 'contact':
+			contactRef.current.scrollIntoView({ behavior: 'smooth' })
+			break
+		default:
+			break
 		}
 
 	}

@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+export const important = true
 export const content = [
 	'./src/pages/**/*.{js,ts,jsx,tsx,mdx}',
 	'./src/components/**/*.{js,ts,jsx,tsx,mdx}',
