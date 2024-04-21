@@ -33,7 +33,9 @@ export default function NavBar({ scroll }){
 							Contact
 					</Link>
 					<Button variant="contained" className='hover:bg-primary whitespace-nowrap'>
+						<a download href='cv.pdf' className='text-white'>
 							Download CV
+						</a>
 					</Button>
 				</Container>
 			</Container>
